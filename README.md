@@ -77,40 +77,21 @@ text
 
 ## 📁 Project Structure
 
-crowdwisdom-trading-ai/
-main.py - Entry point
-
-agents/ - AI agents folder
-
-data_collector.py - Scraping agent
-
-identify_products.py - Product matching agent
-
-rearrange_data.py - Data processing agent
-
-rag_chat_agent.py - Chat interface
-
-utils/ - Utilities
-
-logger.py - Logging system
-
-outputs/ - Generated files
-
-final_products.csv - Main results
-
-raw_data.json - Scraped data
-
-unified_data.json - Processed data
-
-analysis_reports.json - Analytics
-
-requirements.txt - Dependencies
-
-README.md - Documentation
-
-
-
-
+| Folder | Files | Purpose |
+|--------|-------|---------|
+| agents | data_collector.py | Scraping agent |
+| agents | identify_products.py | Product matching agent |
+| agents | rearrange_data.py | Data processing agent |
+| agents | rag_chat_agent.py | Chat interface |
+| agents | rag_knowledge_base.py | Knowledge base builder |
+| utils | logger.py | Logging system |
+| outputs | final_products.csv | Main results |
+| outputs | raw_data.json | Scraped data |
+| outputs | unified_data.json | Processed data |
+| outputs | analysis_reports.json | Analytics |
+| root | main.py | Entry point |
+| root | requirements.txt | Dependencies |
+| root | README.md | Documentation |
 
 
 ## 📊 Sample Output Files
