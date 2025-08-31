@@ -28,7 +28,7 @@ The system uses CrewAI framework with three specialized agents:
 ## 🚀 Installation
 
 1. **Clone the repository**
-git clone https://github.com/yourusername/crowdwisdom-trading-ai.git
+git clone https://github.com/SuyashVanjare/crowdwisdom-trading-ai.git
 cd crowdwisdom-trading-ai
 
 text
@@ -132,17 +132,11 @@ Edit `main.py` to customize:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Links
-
-- [Demo Video](link-to-demo)
-- [Documentation](link-to-docs)  
-- [Issues](https://github.com/yourusername/crowdwisdom-trading-ai/issues)
-
 ## 📧 Contact
 
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn](link)
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Email**: suyashvanjare23@gmail.com
+- **LinkedIn**: [SuyashVanjare](https://www.linkedin.com/in/suyash-vanjare-7a97b0338/)
+- **GitHub**: [@SuyashVanjare](https://github.com/SuyashVanjare)
 
 ---
 
