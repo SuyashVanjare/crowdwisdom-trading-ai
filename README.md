@@ -1,7 +1,9 @@
 🎯 CrowdWisdom Trading AI Agent
+
 A multi-agent AI system that unifies prediction market data from multiple platforms and provides intelligent analysis through a RAG-powered chatbot.
 
 🌟 Features
+
 Multi-Platform Scraping: Collect data from Polymarket, Kalshi, Prediction-Market, and Manifold
 
 AI-Powered Unification: Uses Gemini 2.0 Flash to identify and match similar products across platforms
@@ -15,15 +17,17 @@ Professional Logging: Complete error handling and execution tracking
 Arbitrage Detection: Identify price differences across platforms
 
 🏗️ Architecture
-The system uses CrewAI framework with three specialized agents:
 
-Data Collector Agent - Scrapes prediction market websites
+This project is built using the CrewAI framework with three specialized agents:
 
-Product Identification Agent - Uses AI to match similar products
+Data Collector Agent → Scrapes prediction market websites
 
-Data Arrangement Agent - Creates professional CSV outputs and analytics
+Product Identification Agent → Uses AI to match similar products
+
+Data Arrangement Agent → Creates CSV outputs and analytics
 
 📋 Prerequisites
+
 Python 3.9+
 
 Google Gemini API key
@@ -31,44 +35,51 @@ Google Gemini API key
 Virtual environment (recommended)
 
 🚀 Installation
-Clone the repository
 
-bash
+Clone the repository:
+
 git clone https://github.com/SuyashVanjare/crowdwisdom-trading-ai.git
 cd crowdwisdom-trading-ai
-Create virtual environment
 
-bash
+
+Create a virtual environment:
+
 python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate     # On Windows
-Install dependencies
+# macOS/Linux
+source venv/bin/activate  
+# Windows
+venv\Scripts\activate
 
-bash
+
+Install dependencies:
+
 pip install -r requirements.txt
-Set up API key
 
-Get your API key from https://aistudio.google.com/
 
-bash
-export GEMINI_API_KEY="your-api-key-here"  # macOS/Linux
-set GEMINI_API_KEY=your-api-key-here       # Windows CMD
-$env:GEMINI_API_KEY="your-api-key-here"    # Windows PowerShell
+Set up API key:
+
+# macOS/Linux
+export GEMINI_API_KEY="your-api-key-here"  
+
+# Windows CMD
+set GEMINI_API_KEY=your-api-key-here       
+
+# Windows PowerShell
+$env:GEMINI_API_KEY="your-api-key-here"    
+
 💻 Usage
+
 Run the complete pipeline:
-bash
+
 python main.py
+
 Options:
-1 - Run data pipeline only
-
-2 - Launch chat interface only
-
-3 - Run pipeline then chat
-
-4 - Exit
+1 - Run data pipeline only  
+2 - Launch chat interface only  
+3 - Run pipeline then chat  
+4 - Exit  
 
 📁 Project Structure
-text
 crowdwisdom-trading-ai/
 ├── agents/
 │   ├── data_collector.py      # Scraping agent
@@ -83,14 +94,16 @@ crowdwisdom-trading-ai/
 │   └── unified_data.json      # Processed data
 ├── main.py                    # Entry point
 ├── requirements.txt           # Dependencies
-└── README.md                  # This file
+└── README.md                  # Documentation
+
 📊 Sample Output Files
 File	Description	Purpose
 final_products.csv	Main analysis-ready dataset	Trading analysis
 unified_data.json	AI-processed market data	Data pipeline
 analysis_reports.json	Platform analytics	Market insights
 🤖 Chat Interface
-Ask questions like:
+
+You can ask:
 
 "What Tesla prediction markets are available?"
 
@@ -101,20 +114,24 @@ Ask questions like:
 "Show me markets with 90%+ confidence scores"
 
 🤝 Contributing
+
 Fork the repository
 
-Create feature branch (git checkout -b feature/AmazingFeature)
+Create a feature branch (git checkout -b feature/AmazingFeature)
 
-Commit changes (git commit -m 'Add AmazingFeature')
+Commit your changes (git commit -m 'Add AmazingFeature')
 
-Push to branch (git push origin feature/AmazingFeature)
+Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
 
 📧 Contact
+
 Email: suyashvanjare23@gmail.com
 
 GitHub: @SuyashVanjare
