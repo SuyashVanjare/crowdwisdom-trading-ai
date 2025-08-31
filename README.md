@@ -1,63 +1,149 @@
-# 📈 CrowdWisdom Trading AI Agent
+# 🎯 CrowdWisdom Trading AI Agent
 
-An **AI-powered trading agent** that leverages crowd wisdom and advanced models to provide actionable insights and decision-making support for trading.
+A multi-agent AI system that unifies prediction market data from multiple platforms and provides intelligent analysis through a RAG-powered chatbot.
 
----
+## 🌟 Features
 
-## 🚀 Features
-- 🤖 **AI-driven decision-making**  
-- 📊 **Real-time market analysis**  
-- 📚 **Crowd sentiment integration**  
-- 🔗 **Easy integration with APIs**  
+- **Multi-Platform Scraping**: Collect data from Polymarket, Kalshi, Prediction-Market, and Manifold
+- **AI-Powered Unification**: Uses Gemini 2.0 Flash to identify and match similar products across platforms
+- **Comprehensive CSV Output**: Generates analysis-ready datasets with confidence scores
+- **RAG Chatbot**: Interactive chat interface for querying market data
+- **Professional Logging**: Complete error handling and execution tracking
+- **Arbitrage Detection**: Identify price differences across platforms
 
----
+## 🏗️ Architecture
 
-## 📂 Project Structure
-CrowdWisdomTrading-AI_Agent/
-│── venv/ # Virtual environment (do not push to GitHub)
-│── main.py # Main entry point
-│── requirements.txt # Dependencies
-│── README.md # Project documentation
+The system uses CrewAI framework with three specialized agents:
 
-yaml
-Copy code
+1. **Data Collector Agent** - Scrapes prediction market websites
+2. **Product Identification Agent** - Uses AI to match similar products 
+3. **Data Arrangement Agent** - Creates professional CSV outputs and analytics
 
----
+## 📋 Prerequisites
 
-## ⚙️ Installation
+- Python 3.9+
+- Google Gemini API key
+- Virtual environment (recommended)
 
-Clone the repo:
+## 🚀 Installation
 
-```bash
-git clone https://github.com/your-username/CrowdWisdomTrading-AI_Agent.git
-cd CrowdWisdomTrading-AI_Agent
-Create and activate a virtual environment:
+1. **Clone the repository**
+git clone https://github.com/yourusername/crowdwisdom-trading-ai.git
+cd crowdwisdom-trading-ai
 
-bash
-Copy code
+text
+
+2. **Create virtual environment**
 python -m venv venv
-# Activate it
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-Install dependencies:
+source venv/bin/activate # On macOS/Linux
+venv\Scripts\activate # On Windows
 
-bash
-Copy code
+text
+
+3. **Install dependencies**
 pip install -r requirements.txt
-▶️ Usage
-Run the main script:
 
-bash
-Copy code
+text
+
+4. **Set up API key**
+
+Get your API key from https://aistudio.google.com/
+
+export GEMINI_API_KEY="your-api-key-here" # macOS/Linux
+set GEMINI_API_KEY=your-api-key-here # Windows CMD
+$env:GEMINI_API_KEY="your-api-key-here" # Windows PowerShell
+
+text
+
+## 💻 Usage
+
+### Run the complete pipeline:
 python main.py
-📜 License
-This project is licensed under the MIT License.
 
-pgsql
-Copy code
+text
 
-✅ Just copy everything above into your **README.md** file, and it will be perfectly formatted on GitHub.  
+### Options:
+- **1** - Run data pipeline only
+- **2** - Launch chat interface only  
+- **3** - Run pipeline then chat
+- **4** - Exit
 
-Do you also want me to **add badges** (Python version, License, Repo size, etc.) at the very top for a more professional look?
+### Sample Output:
+📊 Products processed: 21
+🔗 Platforms covered: 4
+🏷️ Categories found: 10
+
+text
+
+## 📁 Project Structure
+
+crowdwisdom-trading-ai/
+├── main.py # Main orchestrator
+├── agents/
+│ ├── data_collector.py # Scraping agent
+│ ├── identify_products.py # AI matching agent
+│ ├── rearrange_data.py # CSV generation agent
+│ └── rag_chat_agent.py # Chat interface
+├── utils/
+│ └── logger.py # Logging utilities
+├── outputs/
+│ ├── final_products.csv # Main results
+│ ├── raw_data.json # Scraped data
+│ └── unified_data.json # Processed data
+├── requirements.txt # Dependencies
+└── README.md # This file
+
+text
+
+## 📊 Sample Output Files
+
+| File | Description | Size |
+|------|-------------|------|
+| `final_products.csv` | Main analysis-ready dataset | ~2KB |
+| `final_products_comprehensive.csv` | Detailed metrics | ~5KB |
+| `unified_data.json` | AI-processed market data | ~16KB |
+| `analysis_reports.json` | Platform analytics | ~3KB |
+
+## 🤖 Chat Interface
+
+Ask questions like:
+- "What Tesla prediction markets are available?"
+- "Find arbitrage opportunities with >5% spreads"
+- "Which platform has the highest volume?"
+- "Show me markets with 90%+ confidence scores"
+
+## 🔧 Configuration
+
+Edit `main.py` to customize:
+- API keys and models
+- Scraping intervals
+- Output formats
+- Chat interface options
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- [Demo Video](link-to-demo)
+- [Documentation](link-to-docs)  
+- [Issues](https://github.com/yourusername/crowdwisdom-trading-ai/issues)
+
+## 📧 Contact
+
+- **Email**: your-email@example.com
+- **LinkedIn**: [Your LinkedIn](link)
+- **GitHub**: [@yourusername](https://github.com/yourusername)
+
+---
+
+⭐ If this project helped you, please give it a star!
