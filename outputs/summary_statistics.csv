@@ -1,0 +1,26 @@
+Metric_Category,Metric_Name,Value
+platform_coverage,Polymarket,"{'count': 13, 'total_volume': 509269.01920000004}"
+platform_coverage,Kalshi,"{'count': 3, 'total_volume': 2700000.0}"
+platform_coverage,Prediction_Market,"{'count': 4, 'total_volume': 3950000.0}"
+platform_coverage,Manifold,"{'count': 2, 'total_volume': 1780000.0}"
+category_breakdown,Sports,7
+category_breakdown,Chess,1
+category_breakdown,Pop-Culture ,1
+category_breakdown,NFTs,1
+category_breakdown,Ukraine & Russia,2
+category_breakdown,Business,1
+category_breakdown,Politics,4
+category_breakdown,Economics,2
+category_breakdown,Technology,1
+category_breakdown,Crypto,1
+confidence_distribution,High (0.8-1.0),18
+confidence_distribution,Medium (0.6-0.8),3
+confidence_distribution,Low (0.0-0.6),0
+General,total_products,21
+processing_metadata,processing_timestamp,2025-08-31 18:02:52.449777
+processing_metadata,original_markets,24
+processing_metadata,unified_groups,21
+processing_metadata,compression_ratio,0.875
+processing_metadata,high_confidence_matches,18
+processing_metadata,original_metadata,"{'collection_timestamp': '2025-08-31 18:00:48.213802', 'total_markets': 24, 'sources': ['Prediction-Market', 'Polymarket', 'Manifold', 'Kalshi'], 'categories': ['Sports', 'Chess', 'Pop-Culture ', 'Economics', 'Technology', 'Business', 'NFTs', 'Ukraine & Russia', 'Crypto', 'Politics']}"
+General,generation_timestamp,2025-08-31 18:02:52.482356
