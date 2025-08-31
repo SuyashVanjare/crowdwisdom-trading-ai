@@ -78,22 +78,26 @@ text
 ## 📁 Project Structure
 
 crowdwisdom-trading-ai/
-├── main.py # Main orchestrator
+├── main.py
+├── requirements.txt
+├── README.md
+├── .gitignore
 ├── agents/
-│ ├── data_collector.py # Scraping agent
-│ ├── identify_products.py # AI matching agent
-│ ├── rearrange_data.py # CSV generation agent
-│ └── rag_chat_agent.py # Chat interface
+│   ├── data_collector.py
+│   ├── identify_products.py
+│   ├── rearrange_data.py
+│   └── rag_chat_agent.py
 ├── utils/
-│ └── logger.py # Logging utilities
+│   └── logger.py
 ├── outputs/
-│ ├── final_products.csv # Main results
-│ ├── raw_data.json # Scraped data
-│ └── unified_data.json # Processed data
-├── requirements.txt # Dependencies
-└── README.md # This file
+│   ├── final_products.csv
+│   ├── raw_data.json
+│   ├── unified_data.json
+│   └── analysis_reports.json
+└── venv/
 
-text
+
+
 
 ## 📊 Sample Output Files
 
